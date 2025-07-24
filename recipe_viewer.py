@@ -434,15 +434,7 @@ tk.Button(top_frame, text="📝 Add New Recipe", command=open_recipe_logger_wind
 tk.Button(top_frame, text="🛒 Create Grocery List", command=open_grocery_generator_window).pack(side='left', padx=5)
 tk.Button(top_frame, text="🔄 Refresh List", command=refresh_recipe_list).pack(side='left')
 
-# --- NEW: Delete button on the right ---
-delete_button = tk.Button(
-    top_frame,
-    text="🗑️ Delete Selected Recipe",
-    command=delete_selected_recipe,
-    bg="#ff4d4d", # A reddish color to indicate a destructive action
-    fg="white"
-)
-delete_button.pack(side='right')
+# --- Removed: Delete button on the right ---
 
 # --- Main Layout Frames ---
 list_frame = tk.Frame(window, padx=10, pady=10)
